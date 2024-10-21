@@ -31,6 +31,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dea5454c-2d19-4054-bcf4-bdcfe8c3febc"
+      }
+    },
+    "owner": "gdsbielz"
   }
 }
