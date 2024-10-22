@@ -53,8 +53,8 @@ export default function TodosAlertasScreen({route} :any) {
               <DataTable.Title textStyle={styles.celulas}>Indicadores</DataTable.Title>
               <DataTable.Title textStyle={styles.celulas}>Data</DataTable.Title>
             </DataTable.Header>
-            {alertas.map((alerta: any) => (
-              <DataTable.Row key={alerta.idcoletor} style={styles.rowBorders}>
+            {alertas.map((alerta:any, index: any) => (
+              <DataTable.Row key={`${alerta.idcoletor}-${index}`} style={styles.rowBorders}>
                 <DataTable.Cell textStyle={styles.celulas}>{alerta.codigo}</DataTable.Cell>
                 <DataTable.Cell textStyle={styles.celulas}>{alerta.status}</DataTable.Cell>
                 <DataTable.Cell textStyle={styles.celulas}>{alerta.indicadores}</DataTable.Cell>
