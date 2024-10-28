@@ -25,7 +25,7 @@ export default function MachinesScreen() {
     // Função para buscar máquinas
     const fetchMachines = () => {
         setLoading(true); // Define loading como true antes de fazer a requisição
-        fetch('http://192.168.15.201:5000/maquinas')  // Substitua pela sua URL da API
+        fetch('http://192.168.15.200:5000/maquinas')  // Substitua pela sua URL da API
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Erro de conexão com a API.');

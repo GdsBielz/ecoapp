@@ -39,7 +39,7 @@ const [previousAlerts, setPreviousAlerts] = useState(0);
 
 const fetchAlertas = async () => {
   try {
-    const response = await fetch('http://192.168.15.201:5000/alertas');
+    const response = await fetch('http://192.168.15.200:5000/alertas');
     const data = await response.json();
     setAlertas(data);
 
@@ -317,6 +317,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
     position: 'absolute',
+    alignSelf: 'center',
     fontSize: 30
   },
   verMais: {

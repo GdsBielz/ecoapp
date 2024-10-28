@@ -12,7 +12,7 @@ export default function TodosAlertasScreen({route} :any) {
   const fetchAlertas = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://192.168.15.201:5000/alertas'); // Substitua pela URL da sua API
+      const response = await fetch('http://192.168.15.200:5000/alertas'); // Substitua pela URL da sua API
       const data = await response.json();
       setAlertas(data); // Atualiza o estado com os novos alertas
     } catch (error) {
